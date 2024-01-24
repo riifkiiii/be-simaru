@@ -72,7 +72,7 @@
                             <a class="nav-link" href="{{ route('register') }}">Register</a>
                         </li>
                     @else
-                    @if($userRole != 'user')
+                   
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('users.index') }}">User</a>
                         </li>
@@ -80,7 +80,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ruangans.page') }}">Master Ruangan</a>
                         </li>
-                    @endif
+                  
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('bookings.page')
 }}">Booking Ruangan</a>

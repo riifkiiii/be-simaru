@@ -234,7 +234,7 @@
                 "Content-Type":"application/json",
                 "Authorization": "Bearer {{ session('accessToken') }}"
             },
-            url:"{{ url('api/ruangans')}}/"+id+"/delete",
+            url:"{{ url('api/bookings')}}/"+id+"/delete",
             method:"DELETE",            
             data: JSON.stringify({
                     '_token': '{{ csrf_token() }}'

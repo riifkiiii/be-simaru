@@ -10,7 +10,15 @@ class RuangController extends Controller
 {
     public function index()
     {
-        return response()->json(Ruangan::All());
+        return response()->json(Ruangan::All())->header('Access-Control-Allow-Origin', '*')
+            ->header(
+                'Access-Control-Allow-Methods',
+                'GET, POST, PUT, DELETE, OPTIONS'
+            )
+            ->header(
+                'Access-Control-Allow-Headers',
+                'Accept,Authorization,Content-Type'
+            );;
     }
 
     public function indexPage()
